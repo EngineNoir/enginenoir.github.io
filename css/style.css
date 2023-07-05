@@ -113,7 +113,7 @@ a:active {
 .grid-container {
   display: grid;
   grid-template-areas: 
-    'left left header header right right' 
+    'header header header header header header' 
     'left left middle middle right right' 
     'footer footer footer footer footer footer';
   /* grid-column-gap: 10px; - if you want gap between the columns */
