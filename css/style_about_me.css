@@ -12,7 +12,7 @@ body {
   }
   
   title {
-    text-align: center;
+    text-align: left;
     font-family: 'Orbitron';
   }
   
@@ -21,12 +21,23 @@ body {
     position: static;
     text-align: center;
   }
-  
-  p {
+ 
+  .link-class {
+    text-align: center;
     color: #56b6c2;
+    padding: 0.2em 5em;
+  }
+
+
+  p {
+    text-align: left;
+    color: #56b6c2;
+    padding: 0.2em 5em;
   }
   
   li {
+    text-align: left;
+    padding: 0.2em 5em;
     color: #56b6c2;
     text-indent: -2em;
   }
