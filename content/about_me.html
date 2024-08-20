@@ -1,74 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <title>EngineNoir</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="../css/style_about_me.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap">
+        <link
+            href="https://fonts.googleapis.com/css?family=Orbitron"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap"
+        />
         <script src="../js/scripts"></script>
     </head>
-<body>
+    <body>
+        <div class="grid-container">
+            <div class="header">
+                <h1>
+                    <a href="../index.html" style="color: #dcd7ba"
+                        >EngineNoir</a
+                    >
+                </h1>
+                <p class="link-class">
+                    <a href="https://github.com/EngineNoir">Github</a>
+                </p>
+            </div>
 
-    <div class="grid-container">
-        <div class="header">
-          <h1><a href="../index.html" style="color: #dcd7ba;">EngineNoir</a></h1>
-                <p class="link-class"><a href="https://github.com/EngineNoir">Github</a></p> 
+            <div class="left">
+                <h3>Info</h3>
+                <ul>
+                    <li>
+                        <span class="info-list">Occupation: </span>Informatics &
+                        Mathematics Teacher, CS Student, Data Analyst/Content
+                        Manager (former), Study PR Rep (former)
+                    </li>
+                    <li>
+                        <span class="info-list">Interests: </span>Programming,
+                        Philosophy, Art, Maths, Music, Games, D&D
+                    </li>
+                </ul>
+                <h3>Programming</h3>
+
+                <p>
+                    Though I am most familiar with Python, which I often used
+                    for work, I have dipped my toes into many other programming
+                    languages over the years both for work and for personal
+                    interests, namely: Python, JavaScript, C/C++, Rust, MATLAB,
+                    to name a few.
+                </p>
+
+                <p>
+                    I am currently teaching myself Rust through the use of
+                    <u
+                        ><a
+                            href="https://doc.rust-lang.org/stable/book/"
+                            target="_blank"
+                            ><em
+                                >The Rust Programming Language, 2nd Edition</em
+                            ></a
+                        >
+                    </u>
+                    book, and
+                    <u
+                        ><a
+                            href="https://github.com/rust-lang/rustlings"
+                            target="_blank"
+                            >rustlings</a
+                        ></u
+                    >
+                    exercises.
+                </p>
+            </div>
+
+            <div class="right">
+                <h3>Reference Images</h3>
+                <img
+                    src="../images/matt_math.jpg"
+                    alt="Me"
+                    width="75%"
+                    height="auto"
+                    style="border: 2px solid #dcd7ba"
+                />
+                <figcaption>
+                    Tutoring friends and classmates on Networks and Graphs.
+                </figcaption>
+                <h3>Music</h3>
+                <img
+                    src="../images/music.png"
+                    alt="Spotify"
+                    width="60%"
+                    height="auto"
+                    style="border: 2px solid #dcd7ba"
+                />
+                <figcaption>Not the most accurate, but sufficient.</figcaption>
+            </div>
         </div>
-
-        <div class="left">
-            <h3>Info</h3>
-            <ul>
-                <li><span class="info-list">Occupation: </span>Informatics & Mathematics Teacher, CS Student, Data Analyst/Content Manager (former), Study PR Rep (former)</li>
-                <li><span class="info-list">Interests: </span>Programming, Philosophy, Art, Maths, Music, Games, D&D</li>
-            </ul>
-            <h3>Programming</h3>
-            
-                <p>Though I am most familiar with Python, which I often used for work, I have dipped my toes into many other programming languages over the years both for work and for personal interests, namely: Python, JavaScript, C/C++, Rust, MATLAB, to name a few.</p>
-            
-                <p>Projects that I've worked on include: Large quantity content generation with OpenAI API (python/JS), Topological Data Analysis with giotto-tda (python), OS fundamentals: UNIX shell/memory-allocators/file-system (C).</p>
-
-                <p>I am currently teaching myself Rust through the use of <u><a href="https://doc.rust-lang.org/stable/book/" target="_blank"><em>The Rust Programming Language, 2nd Edition</em></a></u> book, and <u><a href="https://github.com/rust-lang/rustlings" target="_blank">rustlings</a></u> exercises.</p>
-
-            <h3>Reading</h3>
-            <p>Here are some recommendations that I enjoyed in particular, ranging between philosophy, fantasy, science, politics, history, (science)-fiction, and more.</p>
-
-                <p><em>The Man in the High Castle</em>, Philip K. Dick<br>
-                    <em>Trial and Death of Socrates: Four Dialogues</em>, Plato<br>
-                    <em>Rhetoric</em>, Aristotle<br>
-                    <em>Nicomachean Ethics</em>, Aristotle<br>
-                    <em>Politics</em>, Aristotle<br>
-                    <em>The Myth of Sisyphus</em>, Albert Camus<br>
-                    <em>On Anarchism</em>, Noam Chomsky<br>
-                    <em>Mathematics for the Non-mathematician</em>, Morris Kline<br>
-                    <em>The Prince</em>, Niccolo Machiavelli<br>
-                    <em>How to be a Stoic</em>, Massimo Pigliucci<br>
-                    <em>Letters from a Stoic</em>, Seneca the Younger<br>
-                    <em>Meditations</em>, Marcus Aurelius<br>
-                    <em>Enchiridion</em>, Epictetus<br>
-                    <em>SPQR</em>, Mary Beard<br>
-                    <em>Modern operating Systems</em>, Bos & Tanenbaum<br>
-                    <em>Computer Networks</em>, Feamster & Tanenbaum & Wetherall<br>
-                    <em>Contemporary Abstract Algebra</em>, Joseph A. Gallian<br>
-                    <em>The Rust Programming Language</em>, Klabnik & Nichols<br>
-                    <em>Linear Algebra Done Right</em>, Sheldon Axler<br>
-                    <em>Understanding Analysis</em>, Stephen Abbot<br>
-                    <em>The Lord of the Rings</em>, J.R.R.Tolkien<br>
-                    <em>Fight Club</em>, Chuck Palahniuk<br>
-                    <em>... More coming soon ...</em>
-
-            </p>
-        </div>
-    
-        <div class="right">
-            <h3>Reference Images</h3>
-            <img src="../images/matt_math.jpg" alt="Me" width="75%" height="auto" style="border: 2px solid #dcd7ba;">
-            <figcaption>Tutoring friends and classmates on Networks and Graphs.</figcaption>
-            <h3>Music</h3>
-            <img src="../images/music.png" alt="Spotify" width="50%" height="auto" style="border: 2px solid #dcd7ba;">
-            <figcaption>Not the most accurate, but sufficient.</figcaption>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
