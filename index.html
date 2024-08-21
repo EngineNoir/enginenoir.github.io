@@ -1,45 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <title>EngineNoir</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="../css/style.css" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" /> <!-- For local testing -->
-        <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap">
-        <script src=""></script>
+        <link href="css/style_about_me.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Orbitron"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Exo+2:400,700&display=swap"
+        />
+        <script src="js/scripts.js"></script>
     </head>
-<body>
+    <body>
+        <div class="grid-container">
+            <div class="header">
+                <h1>EngineNoir</h1>
+                <p class="link-class">
+                    <a href="https://github.com/EngineNoir">Github</a>
+                </p>
+            </div>
 
-    <div class="grid-container">
-        <div class="header">
-          <h1> EngineNoir</h1>
-          <p><a href="https://github.com/EngineNoir" target="_blank">Github</a>
-        </div>
+            <div class="left">
+                <h3>Hello!</h3>
+                <p>
+                    This is my little web page where I list some things I like,
+                    and what I'm up to.
+                </p>
+                <ul>
+                    <li>
+                        <span class="info-list">Interests: </span>Programming,
+                        Philosophy, Art, Maths, Music, Games, D&D
+                    </li>
+                </ul>
 
-        <div class="left">
-            <h3>Who Am I?</h3>
-            <ul>
-		<li><a href="content/about_me.html">About Me</a></li>
-	    	<li><a href="content/tech_stack.html">Tech Stack</a></li>
-		<li><a href="content/useful_links.html">Useful Links</a></li>
-		<li><a href="content/web/index.html">Custom Homepage (mobile)</a></li>
-	    </ul>
-		<!-- 
-            <h3>Blog Articles</h3>
-            <a href="content/the_hut.html">You can have your Hut...(Coming Soon)</a>
-        	-->
-	</div>
+                <div id="gifs"></div>
+                <p>
+                    Here is a random little gif that I made for fun. Reload the
+                    page for a different one!
+                </p>
+                <script>
+                    window.onload = function () {
+                        getRandomGif();
+                    };
+                </script>
 
-        <div class="middle">
+                <h3>Programming</h3>
+
+                <p>
+                    Though I am most familiar with Python, which I often used
+                    for work, I have dipped my toes into many other programming
+                    languages over the years both for work and for personal
+                    interests, namely: Python, JavaScript, C/C++, Rust, MATLAB,
+                    to name a few.
+                </p>
+
+                <p>
+                    I am currently teaching myself Rust through the use of
+                    <u
+                        ><a
+                            href="https://doc.rust-lang.org/stable/book/"
+                            target="_blank"
+                            ><em
+                                >The Rust Programming Language, 2nd Edition</em
+                            ></a
+                        >
+                    </u>
+                    book, and
+                    <u
+                        ><a
+                            href="https://github.com/rust-lang/rustlings"
+                            target="_blank"
+                            >rustlings</a
+                        ></u
+                    >
+                    exercises.
+                </p>
+
+                <p>
+                    I am working on some small video game ideas, and am working
+                    to develop the skills needed for scripting and design. A
+                    small terminal based python RPG called Realms can be found
+                    <a href="https://github.com/EngineNoir/Realms_RPG"
+                        ><u>here</u></a
+                    >.
+                </p>
+            </div>
+
+            <div class="right">
+                <h3>Music</h3>
+                <img
+                    src="images/music.png"
+                    alt="Spotify"
+                    width="60%"
+                    height="auto"
+                    style="border: 2px solid #dcd7ba"
+                />
+                <figcaption>Not the most accurate, but sufficient.</figcaption>
+            </div>
         </div>
-    
-        <div class="right">
-            <h3>Webcomic</h3>
-		<a href="https://treestumptavern.com" target="_blank">Tree Stump Tavern</a>
-            
-        </div>
-    </div>
-</body>
+    </body>
 </html>
