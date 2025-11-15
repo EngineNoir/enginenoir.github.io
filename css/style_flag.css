@@ -1,0 +1,189 @@
+body {
+  background-color: #1a1b26;
+
+  font-family: 'Exo 2', sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  color: #dcd7ba;
+}
+
+title {
+  text-align: center;
+  font-family: 'Orbitron';
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron';
+  position: static;
+  text-align: center;
+}
+
+p {
+  color: #56b6c2;
+  /* zcc{c55_but_n0t_50_hidd3n} */
+}
+
+.hidden-button {
+    position: absolute; 
+    left: -1000px;  /* woah, this button is far away... */
+    top: 50%;        
+    transform: translateY(-50%); 
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;  /* woah, and it's invisible!? */
+    transition: left 0.3s ease, opacity 0.3s ease; 
+}
+
+.hidden-button:hover {
+    background-color: #3e8e41;
+}
+
+li {
+  color: #56b6c2;
+  text-indent: -2em;
+}
+
+ol {
+  list-style-position: inside;
+  padding-left: 10px;
+  list-style-type: disclosure-open; /* set the symbol for the ordered list */
+}
+
+ul {
+  list-style-type: none; /* remove symbols for unordered list */
+}
+
+input {
+  font-family: monospace;
+  background-color: black;
+  color: #56b6c2;
+  border: 1px solid;
+}
+
+input[type="text"] {
+  background-color: #1d1d1d;
+  border: none;
+  border-radius: 3px;
+  color: #56b6c2;
+  font-family: 'Orbitron';
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.info-list {
+  font-family: 'Orbitron';
+  color: #dcd7ba;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  background-color: #dcd7ba;
+  color: black;
+  font-family: 'Orbitron';
+  font-size: 22px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a:link {
+  color: #56b6c2;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #56b6c2;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #dcd7ba;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #dcd7ba;
+  text-decoration: none;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'header header header header header header' 
+    'left left middle middle right right' 
+    'footer footer footer footer footer footer';
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  text-align: center;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+  text-align: center;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  text-align: center;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+}
+
+#logo {
+  transition: transform 0.3s ease;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas: 
+      'header header header header header header' 
+      'left left left left left left' 
+      'middle middle middle middle middle middle' 
+      'right right right right right right' 
+      'footer footer footer footer footer footer';
+  }
+}
+
+

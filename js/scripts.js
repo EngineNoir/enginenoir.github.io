@@ -5,7 +5,7 @@ const gifs = [
   'images/mtg_rotating_forest.gif"',
   'images/mtg_rotating_mountain.gif"',
   'images/mtg_rotating_plains.gif"',
-  'images/rotating_sword.gif"',
+  //'images/rotating_sword.gif"',
   // Add more paths as needed
 ];
 
@@ -16,5 +16,5 @@ function getRandomGif() {
   }
   const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
   const gifContainer = document.getElementById("gifs");
-  gifContainer.innerHTML = `<img src="${randomGif}" alt="Random GIF">`;
+  gifContainer.innerHTML = `<img src="${randomGif}" alt="Random GIF" width="150" height="200">`;
 }
