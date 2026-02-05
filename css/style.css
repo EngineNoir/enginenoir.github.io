@@ -49,10 +49,10 @@ input {
 }
 
 input[type="text"] {
-  background-color: #1d1d1d;
+  background-color: #56b6c2;
   border: none;
   border-radius: 3px;
-  color: #56b6c2;
+  color: #000000;
   font-family: 'Orbitron';
   font-size: 15px;
   padding: 5px;
